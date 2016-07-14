@@ -8,6 +8,7 @@ set title
 set hlsearch
 set incsearch
 set tabstop=4
+set sw=4
 syntax on
 set background=dark
 
