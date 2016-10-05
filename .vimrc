@@ -7,10 +7,15 @@ set ruler
 set title
 set hlsearch
 set incsearch
-set tabstop=4
-set sw=4
-syntax on
+set expandtab
+set tabstop=2
+set shiftwidth=2
 set background=dark
+set cino=(0
+highlight OverLength ctermbg=darkred ctermfg=white guibg=#FFD9D9
+match OverLength /\%81v.\+/
+syntax on
+
 
 
 map 1 mA
