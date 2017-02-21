@@ -91,6 +91,8 @@ set expandtab
 set textwidth=80
 set wrap
 
+set background=dark
+
 set cindent
 set cinoptions=h1,l1,g1,t0,i4,+4,(0,w1,W4
 
@@ -100,7 +102,7 @@ let b:undo_indent = "setl sw< ts< sts< et< tw< wrap< cin< cino< inde<"
 
 highlight OverLength ctermbg=darkred ctermfg=white guibg=#FFD9D9
 match OverLength /\%81v.\+/
-execute pathogen#infect ()
+#execute pathogen#infect ()
 syntax on
 filetype plugin indent on
 
