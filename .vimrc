@@ -102,7 +102,7 @@ let b:undo_indent = "setl sw< ts< sts< et< tw< wrap< cin< cino< inde<"
 
 highlight OverLength ctermbg=darkred ctermfg=white guibg=#FFD9D9
 match OverLength /\%81v.\+/
-#execute pathogen#infect ()
+
 syntax on
 filetype plugin indent on
 
