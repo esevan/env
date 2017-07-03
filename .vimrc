@@ -1,7 +1,7 @@
 " Vim indent file
-" Language:	C++
-" Maintainer:	Konstantin Lepa <konstantin.lepa@gmail.com>
-" Last Change:	2010 May 20
+" Language:     C++
+" Maintainer:   Konstantin Lepa <konstantin.lepa@gmail.com>
+" Last Change:  2010 May 20
 " License: MIT
 " Version: 1.1.0
 "
@@ -100,11 +100,12 @@ set indentexpr=GoogleCppIndent()
 
 let b:undo_indent = "setl sw< ts< sts< et< tw< wrap< cin< cino< inde<"
 
-highlight OverLength ctermbg=darkred ctermfg=white guibg=#FFD9D9
-match OverLength /\%81v.\+/
-
+"highlight OverLength ctermbg=darkred ctermfg=white guibg=#FFD9D9
+"match OverLength /\%81v.\+/
+execute pathogen#infect()
 syntax on
 filetype plugin indent on
+
 
 map 1 mA
 map 2 mB
@@ -119,7 +120,7 @@ map 44 :w<CR>'D
 map 55 :w<CR>'E
 map `` :e#<CR>
 
-map <s-c> :vs./<CR>
+map <s-c> :NERDTreeToggle<cr>
 map <tab><tab> <c-w><c-w>
 imap <tab><tab> <Esc><C-W><C-W>
 
@@ -129,4 +130,7 @@ imap <c-s> <esc>:w<cr>
 imap <c-c> <esc>
 
 map -- mF<c-u>v<c-f><c-f>=gg'F:w<cr>
+map <c-F5> :GoRun<cr>
+map <F7> :GoBuild<cr>
+map <F8> :TagbarToggle<cr>
 
