@@ -39,6 +39,10 @@ cd ~/.vim/bundle
 git clone --quiet https://github.com/majutsushi/tagbar.git
 git clone --quiet https://github.com/scrooloose/nerdtree.git
 
+echo "Install Vundle"
+cd ~/.vim/bundle
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
 echo "Importing bashrc & virmc..."
 cd ~/
 git clone --quiet https://github.com/esevan/env.git
@@ -46,6 +50,7 @@ cp env/.vimrc ~/.vimrc
 cp env/.bashrc ~/.bashrc
 
 vim +GoInstallBinaries +q
+vim +VundleInstall +q
 
 echo "Installation complete!"
 echo "1. export PATH=$PATH:/usr/local/go/bin"
