@@ -45,8 +45,9 @@ git clone --quiet https://github.com/esevan/env.git
 cp env/.vimrc ~/.vimrc
 cp env/.bashrc ~/.bashrc
 
+vim +GoInstallBinaries +q
+
 echo "Installation complete!"
 echo "1. export PATH=$PATH:/usr/local/go/bin"
 echo "2. export GOPATH=$GOPATH"
-echo "3. Open vim and :GoInstallBinaries"
 
