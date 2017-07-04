@@ -134,3 +134,7 @@ map <c-F5> :GoRun<cr>
 map <F7> :GoBuild<cr>
 map <F8> :TagbarToggle<cr>
 
+call vundle#begin()
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
+call vundle#end()
