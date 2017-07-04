@@ -53,6 +53,4 @@ vim +GoInstallBinaries +q
 vim +VundleInstall +q
 
 echo "Installation complete!"
-echo "1. export PATH=$PATH:/usr/local/go/bin"
-echo "2. export GOPATH=$GOPATH"
 
