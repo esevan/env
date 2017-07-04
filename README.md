@@ -1,4 +1,11 @@
-### Description
+### Install
+```
+curl https://raw.githubusercontent.com/esevan/env/master/esevan_confg.sh > esevan_config.sh
+chmod +x esevan_config.sh
+./esevan_config.sh
+```
+
+### About following of this document
 This documentation includes what I use a lot but forget a lot too.
 ### Contents
 1. [Generate random code in shell (python code)](https://github.com/esevan/env/tree/master#generate-random-code)
