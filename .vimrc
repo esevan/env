@@ -1,15 +1,3 @@
-" Vim indent file
-" Language:     C++
-" Maintainer:   Konstantin Lepa <konstantin.lepa@gmail.com>
-" Last Change:  2010 May 20
-" License: MIT
-" Version: 1.1.0
-"
-" Changes {{{
-" 1.1.0 2011-01-17
-"   Refactored source code.
-"   Some fixes.
-"
 set nu
 set title
 set ruler
