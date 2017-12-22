@@ -114,8 +114,5 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export PATH=$PATH:/usr/local/go/bin
-export GOPATH=$HOME/go_workspace
-
 stty ixany
 stty ixoff -ixon
